@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Document</title>
+</head>
+<h1>Alta de Alumnos</h1>
+    <form action="Registrar.php" method="post">
+      Nombre:
+      <input type="text" name="Nombre" pattern="^(0?[1-9]|[12][0-9]|3[01])[\\/](0?[1-9]|1[012])[/\\/](19|20)\\d{2}$"><br><br>
+      Primer apellido:
+      <input type="text" name="Apellido1"><br><br>
+      Segundo apellido:
+      <input type="text" name="Apellido2"><br><br>
+      NIF:
+      <input type="text" name="NIF" pattern="^[0-9]{8}[ABDEFGHJKLMNOPQRSTVWXYZ]{1}$"><br><br>
+      Fecha de Nacimiento:
+      <input type="date" name="Fecha_Nacimiento"><br><br>
+      Mail:
+      <input type="email" name="Email"><br><br>
+      Localidad:
+      <input type="text" name="Localidad"><br><br>
+      Sexo:
+      <select name="Sexo">
+        <option value="1">Masculino</option>
+        <option value="2">Femenino</option>
+        <option value="3">Otro</option>
+      </select>
+      <br><br>
+      Cuenta de Twitter:
+      <input type="text" name="CuentaTwitter" pattern="^@([A-Za-z0-9_]{1,15})$"><br><br>
+
+      <input type="submit" value="Registrar">
+    </form>
+
+    <button type=button>
+        <a href=Mostrar.php?>Mostrar</a>
+    </button>
+</html>

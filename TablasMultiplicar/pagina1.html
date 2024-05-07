@@ -1,0 +1,29 @@
+
+<html>
+
+<head>
+  <title>Formulario de entrada del dato</title>
+</head>
+
+<body>
+  <form method="post" action="pagina2.php">
+    Num inicio:
+    <input type="number" name="inicio">
+    <br>
+    Num final:
+    <input type="number" name="fin">
+    <br>
+    <label for="operador">Elige operador:</label>
+    <select id="operador" name="operador">
+      <option value="+">suma</option>
+      <option value="-">resta</option>
+      <option value="*">multiplicacion</option>
+      <option value="/">division</option>
+    </select>
+    <br>
+    <input type="submit" value="confirmar">
+
+  </form>
+</body>
+
+</html>
