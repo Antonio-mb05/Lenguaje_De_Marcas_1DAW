@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstilosRegistrar.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Formulario Registrar alumnos</h1>
+    <form action="Registrar.php">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" name="Nombre" ><br><br>
+
+        <label for="Apellido1">Primer Apellido:</label><br>
+        <input type="text" id="Apellido1" name="Apellido1" ><br><br>
+
+        <label for="Apellido2">Segundo Apellido:</label><br>
+        <input type="text" id="Apellido2" name="Apellido2" ><br><br>
+
+        <label for="NIF">NIF:</label><br>
+        <input type="text" id="NIF" name="NIF" ><br><br>
+
+        <label for="Fecha_Nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="Fecha_Nacimiento" name="Fecha_Nacimiento" ><br><br>
+
+        <label for="Email">Email:</label><br>
+        <input type="text" id="Email" name="Email" ><br><br>
+
+        <label for="Localidad">Localidad:</label><br>
+        <input type="text" id="Localidad" name="Localidad" ><br><br>
+
+        <label for="Sexo">Sexo:</label><br>
+        <select name="Sexo">
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+          <option value="3">Otro</option>
+        </select>
+        <br><br>
+
+        <label for="CuentaTwitter">Cuenta de Twitter:</label><br>
+        <input type="text" id="CuentaTwitter" name="CuentaTwitter" ><br><br>
+
+
+
+        <input type="submit" value="Registrar">
+    </form>
 </body>
 </html>
